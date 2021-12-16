@@ -1,0 +1,24 @@
+import Head from "next/head";
+import { Box, Container } from "@chakra-ui/react";
+import Navbar from "../navbar";
+
+const Main = ({ children, router }) => {
+  return (
+    <Box as="main" pb={8}>
+      <Head>
+        <title>Simon L. Lange - Homepage </title>
+        <meta
+          name="description"
+          content="Simon L. Lange - Web Developer, Designer and Dreamer."
+        />
+        <link rel="icon" href="/s-logo.png" />
+      </Head>
+      <Navbar path={router.asPath} />
+      <Container maxW="container.lg" pt={14}>
+        {children}
+      </Container>
+    </Box>
+  );
+};
+
+export default Main;
