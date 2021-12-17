@@ -13,8 +13,16 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
+  & img {
+    animation-name: out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
   &:hover img {
-    transform: rotate(20deg);
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
   }
 `;
 

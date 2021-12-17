@@ -1,0 +1,32 @@
+{
+    "libraries": [
+      {
+        "id": 1,
+        "title": "Scss/Sass",
+        "description": "Sass er noget jeg har kendskab til og har brugt meget. Det giver et bedre workflow i ens stylesheets.",
+        "url": "https://sass-lang.com/",
+        "image": "images/sass.png"
+      },
+      {
+        "id": 2,
+        "title": "TaildwindCSS",
+        "description": "TailwindCSS er et af de libraries, som giver god mening at bruge i ens React projekter, det er nemt at gå til og deres dokumentation er velbelyst.",
+        "url": "https://tailwindcss.com/",
+        "image": "images/tailwindcss.png"
+      },
+      {
+        "id": 3,
+        "title": "Chakra UI ",
+        "description": "Endnu et CSS library, som er veloplagt til sine react projekter. Chakra UI er desuden også brugt til at lave siden du ser på nu.",
+        "url": "https://chakra-ui.com/",
+        "image": "images/chakra.png"
+      },
+      {
+        "id": 4,
+        "title": "jQuery",
+        "description": "jQuery er et must i mange projekter, da det tit og ofte er implementeret sammen med andre libraries.",
+        "url": "https://jquery.com/",
+        "image": "images/jquery.png"
+      }
+    ]
+  }

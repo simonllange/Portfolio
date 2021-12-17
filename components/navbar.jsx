@@ -24,8 +24,14 @@ const LinkItem = ({ href, path, children }) => {
     <NextLink href={href}>
       <Link
         p={2}
-        bg={active ? "glassTeal" : undefined}
-        color={active ? "#202023" : inactiveColor}
+        bg={active ? "grayColor" : undefined}
+        color={active ? "whiteAlpha.900" : inactiveColor}
+        borderRadius={5}
+        _hover={{
+          backgroundColor: useColorModeValue("#d6bcfa", "red.200"),
+          transition: "0.2s",
+          textDecoration: "underline",
+        }}
       >
         {children}
       </Link>
@@ -70,8 +76,8 @@ const Navbar = (props) => {
           <LinkItem href="/portfolio" path={path}>
             Portfolio
           </LinkItem>
-          <LinkItem href="/blog" path={path}>
-            Blog
+          <LinkItem href="/gear" path={path}>
+            Gear
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">

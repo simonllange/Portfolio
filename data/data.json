@@ -1,0 +1,40 @@
+{
+  "tools": [
+    
+    {
+      "id": 2,
+      "title": "HTML5",
+      "description": "Som de fleste nok ved, så er HTML5 rygsøjlen i webudvikling. Det er nødvendigt at kunne sit HTML5, for at kunne lægge fundamentet for ens projekt.",
+      "url": "https://da.wikipedia.org/wiki/HTML5",
+      "image": "images/html5.png"
+    },
+    {
+      "id": 3,
+      "title": "CSS3",
+      "description": "Cascading Style Sheets. Hvis man går op i design og æstetik, så er CSS ligeså stor en grundsten som HTML5. Jeg elsker at arbejde i CSS med HTML, da det er som et stort canvas.",
+      "url": "https://da.wikipedia.org/wiki/CSS",
+      "image": "images/css.png"
+    },
+    {
+      "id": 4,
+      "title": "JavaScript",
+      "description": "JavaScript er et nødvendigt sprog at kunne, for at kunne skræddersye sine egne funktioner i ens projekter. Jeg synes JavaScript er fedt, og man kan altid lære noget nyt i det sprog.",
+      "url": "https://www.javascript.com/",
+      "image": "images/javascript.png"
+    },
+    {
+      "id": 5,
+      "title": "React",
+      "description": "React er jo noget, som jeg har forelsket mig i det seneste stykke tid. Med React er det nemmere at bygge ren og letlæseligt kode, samt er workflowet i React meget nemmere at gå til, hvis du spørger mig.",
+      "url": "https://reactjs.org/",
+      "image": "images/react.png"
+    },
+    {
+      "id": 6,
+      "title": "Next.js",
+      "description": "Next.js er for mig, en bedre udgave af React. Next.js har mange indbygget værktøjer, som almindelig React ikke tilbyder.",
+      "url": "https://nextjs.org/",
+      "image": "images/nextjs.png"
+    }
+  ]
+}

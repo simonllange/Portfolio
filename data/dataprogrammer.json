@@ -1,0 +1,32 @@
+{
+    "programs": [
+      {
+        "id": 1,
+        "title": "Visual Studio Code",
+        "description": "VSCode er min foretrukne kildekodeeditor, programmet har alle de funktioner man har brug for, samt en masse fede extensions.",
+        "url": "https://code.visualstudio.com/",
+        "image": "images/vscode.png"
+      },
+      {
+        "id": 2,
+        "title": "Google Chrome",
+        "description": "En browser som jeg har haft meget kendskab til, endda inden jeg begyndte at lave webudvikling og design. Jeg kan godt lide Chrome da deres Inspecter er meget ligetil.",
+        "url": "https://www.google.com/chrome/",
+        "image": "images/google.png"
+      },
+      {
+        "id": 3,
+        "title": "Git",
+        "description": "Git er jo et must-have når det kommer til at arbejde i teams, dog har jeg desværre ikke særlig meget erfaring med at arbejde i hold, men jeg har i hvert fald kendskab til Git.",
+        "url": "https://git-scm.com/",
+        "image": "images/git.png"
+      },
+      {
+        "id": 4,
+        "title": "Github",
+        "description": "Man kan ikke have Git uden Github, så det siger sig selv.",
+        "url": "https://github.com/",
+        "image": "images/github.png"
+      }
+    ]
+  }
