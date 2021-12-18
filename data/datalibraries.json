@@ -9,7 +9,7 @@
       },
       {
         "id": 2,
-        "title": "TaildwindCSS",
+        "title": "TailwindCSS",
         "description": "TailwindCSS er et af de libraries, som giver god mening at bruge i ens React projekter, det er nemt at gå til og deres dokumentation er velbelyst.",
         "url": "https://tailwindcss.com/",
         "image": "images/tailwindcss.png"
