@@ -15,6 +15,13 @@ import {
   LinkOverlay,
   AspectRatio,
   Icon,
+  Popover,
+  PopoverBody,
+  PopoverHeader,
+  PopoverContent,
+  PopoverTrigger,
+  PopoverCloseButton,
+  PopoverArrow,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
@@ -161,6 +168,7 @@ const Page = () => {
             mt={{ base: 10, md: 0 }}
             ml={{ md: 6 }}
             align="center"
+            position="relative"
           >
             <Image
               borderColor={useColorModeValue(
@@ -175,6 +183,34 @@ const Page = () => {
               src="/images/avatar.jpg"
               alt="Simon"
             />
+            <Box position="absolute" right="0" bottom="0">
+              <Popover isLazy>
+                <PopoverTrigger>
+                  <Text
+                    cursor="pointer"
+                    border="1px"
+                    borderColor="black"
+                    borderRadius={50}
+                    p={2}
+                    bg="white"
+                    display={{ base: "none", md: "block" }}
+                  >
+                    🌊
+                  </Text>
+                </PopoverTrigger>
+                <PopoverContent>
+                  <PopoverHeader fontWeight="semibold">
+                    Lige nu øver jeg mig i Next.js!
+                  </PopoverHeader>
+                  <PopoverArrow />
+                  <PopoverCloseButton />
+                  <PopoverBody>
+                    Siden du er på nu, er blandt andet lavet i Nextjs, med
+                    Chakra-UI som CSS library.
+                  </PopoverBody>
+                </PopoverContent>
+              </Popover>
+            </Box>
           </Box>
         </Box>
         <Box mt={12} display="flex">
