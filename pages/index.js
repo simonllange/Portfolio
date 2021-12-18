@@ -52,7 +52,7 @@ const Page = () => {
             size: "20%",
           },
           fullScreen: {
-            zIndex: -5,
+            zIndex: -999,
           },
           interactivity: {
             events: {
@@ -61,7 +61,7 @@ const Page = () => {
                 mode: "repulse",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "bubble",
               },
             },
@@ -168,7 +168,6 @@ const Page = () => {
             mt={{ base: 10, md: 0 }}
             ml={{ md: 6 }}
             align="center"
-            position="relative"
           >
             <Image
               borderColor={useColorModeValue(
