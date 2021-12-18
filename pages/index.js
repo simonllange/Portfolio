@@ -41,6 +41,7 @@ const Page = () => {
   return (
     <Container maxW="container.md">
       <Particles
+        style={{ position: "fixed" }}
         options={{
           background: {
             color: {
