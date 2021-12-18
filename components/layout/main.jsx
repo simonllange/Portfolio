@@ -11,6 +11,7 @@ const Main = ({ children, router }) => {
           name="description"
           content="Simon L. Lange - Web Developer, Designer and Dreamer."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/s-logo.png" />
       </Head>
       <Navbar path={router.asPath} />
