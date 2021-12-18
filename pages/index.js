@@ -38,7 +38,7 @@ const Page = () => {
         <Box my={12} align="center">
           <p>
             <Badge colorScheme={useColorModeValue("purple", "red")} mr={2}>
-              Nyt test
+              Nyt tester hej
             </Badge>
             Ny hjemmeside er oppe og køre! Tag et kig 🥳
           </p>
