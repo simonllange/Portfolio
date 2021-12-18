@@ -26,11 +26,11 @@ const LinkItem = ({ href, path, children, _target, ...props }) => {
       <Link
         p={2}
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        bg={active ? [useColorModeValue("grayColor", "red.200")] : undefined}
+        bg={active ? [useColorModeValue("#757575", "#8a8a8a")] : undefined}
         color={active ? "whiteAlpha.900" : inactiveColor}
         borderRadius={5}
         _hover={{
-          backgroundColor: useColorModeValue("#d6bcfa", "red.200"),
+          backgroundColor: useColorModeValue("#757575", "#8a8a8a"),
           transition: "0.2s",
           textDecoration: "underline",
           color: "white",
@@ -52,7 +52,7 @@ const Navbar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue("#ffffff40", "#20202380")}
+      bg={useColorModeValue("#ffffff40", "#25252b")}
       style={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
       {...props}
