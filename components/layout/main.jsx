@@ -7,6 +7,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <title>Simon L. Lange - Developer, designer, dreamer. </title>
+        <meta charset="utf-8" />
         <meta
           name="description"
           content="Simon L. Lange - Web Developer, Designer and Dreamer."
