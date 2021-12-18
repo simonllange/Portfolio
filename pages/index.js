@@ -183,38 +183,15 @@ const Page = () => {
               src="/images/avatar.jpg"
               alt="Simon"
             />
-            <Box position="absolute" right="0" bottom="0">
-              <Popover isLazy>
-                <PopoverTrigger>
-                  <Text
-                    cursor="pointer"
-                    border="1px"
-                    borderColor="black"
-                    borderRadius={50}
-                    p={2}
-                    bg="white"
-                    display={{ base: "none", md: "block" }}
-                  >
-                    🌊
-                  </Text>
-                </PopoverTrigger>
-                <PopoverContent>
-                  <PopoverHeader fontWeight="semibold">
-                    Lige nu øver jeg mig i Next.js!
-                  </PopoverHeader>
-                  <PopoverArrow />
-                  <PopoverCloseButton />
-                  <PopoverBody>
-                    Siden du er på nu, er blandt andet lavet i Nextjs, med
-                    Chakra-UI som CSS library.
-                  </PopoverBody>
-                </PopoverContent>
-              </Popover>
-            </Box>
           </Box>
         </Box>
-        <Box mt={12} display="flex">
-          <Box mr={6}>
+        <Box
+          mt={12}
+          display="flex"
+          w={{ base: "100%", md: "60%" }}
+          justifyContent="space-between"
+        >
+          <Box>
             <a
               target="_blank"
               rel="noreferrer"
@@ -224,13 +201,18 @@ const Page = () => {
                 color="white"
                 bg="#0077b5"
                 _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
+                fontSize={{ base: "xs", md: "md" }}
               >
                 LinkedIn
-                <Icon pl={2} fontSize="3xl" as={AiOutlineLinkedin} />
+                <Icon
+                  pl={2}
+                  fontSize={{ base: "2xl", md: "3xl" }}
+                  as={AiOutlineLinkedin}
+                />
               </Button>
             </a>
           </Box>
-          <Box mr={6}>
+          <Box>
             <a
               target="_blank"
               rel="noreferrer"
@@ -240,9 +222,14 @@ const Page = () => {
                 color="white"
                 bg="#8a3ab9"
                 _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
+                fontSize={{ base: "xs", md: "md" }}
               >
                 Instagram
-                <Icon pl={2} fontSize="3xl" as={AiOutlineInstagram} />
+                <Icon
+                  pl={2}
+                  fontSize={{ base: "2xl", md: "3xl" }}
+                  as={AiOutlineInstagram}
+                />
               </Button>
             </a>
           </Box>
@@ -260,9 +247,14 @@ const Page = () => {
                   transition: "0.4s",
                   color: "white",
                 }}
+                fontSize={{ base: "xs", md: "md" }}
               >
                 GitHub
-                <Icon pl={2} fontSize="3xl" as={AiOutlineGithub} />
+                <Icon
+                  pl={2}
+                  fontSize={{ base: "2xl", md: "3xl" }}
+                  as={AiOutlineGithub}
+                />
               </Button>
             </a>
           </Box>
