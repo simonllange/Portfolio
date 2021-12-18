@@ -32,6 +32,7 @@ const Portfolio = () => {
             size: "20%",
           },
           fullScreen: {
+            enable: true,
             zIndex: -5,
           },
           interactivity: {
