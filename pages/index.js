@@ -41,122 +41,122 @@ const Page = () => {
   }, []);
   return (
     <Container maxW="container.md">
-      {showParticles} && (
-      <Particles
-        style={{ position: "fixed" }}
-        options={{
-          background: {
-            color: {
-              // eslint-disable-next-line react-hooks/rules-of-hooks
-              value: useColorModeValue("#ffffff", "#25252b"),
-            },
-            image: "url('')",
-            position: "50% 50%",
-            repeat: "no-repeat",
-            size: "20%",
-          },
-          fullScreen: {
-            zIndex: -999,
-          },
-          interactivity: {
-            events: {
-              onClick: {
-                enable: false,
-                mode: "repulse",
-              },
-              onHover: {
-                enable: false,
-                mode: "bubble",
-              },
-            },
-            modes: {
-              bubble: {
-                distance: 250,
-                duration: 2,
-                opacity: 0,
-                size: 0,
-              },
-              grab: {
-                distance: 400,
-              },
-              repulse: {
-                distance: 400,
-              },
-            },
-          },
-          particles: {
-            color: {
-              // eslint-disable-next-line react-hooks/rules-of-hooks
-              value: useColorModeValue("#D6BCFA", "#ffffff"),
-            },
-            links: {
+      {showParticles && (
+        <Particles
+          style={{ position: "fixed" }}
+          options={{
+            background: {
               color: {
-                value: "#ffffff",
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                value: useColorModeValue("#ffffff", "#25252b"),
               },
-              distance: 150,
-              opacity: 0.4,
+              image: "url('')",
+              position: "50% 50%",
+              repeat: "no-repeat",
+              size: "20%",
             },
-            move: {
-              attract: {
-                rotate: {
-                  x: 600,
-                  y: 600,
+            fullScreen: {
+              zIndex: -999,
+            },
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: false,
+                  mode: "repulse",
+                },
+                onHover: {
+                  enable: false,
+                  mode: "bubble",
                 },
               },
-              enable: true,
-              path: {},
-              outModes: {
-                bottom: "out",
-                left: "out",
-                right: "out",
-                top: "out",
+              modes: {
+                bubble: {
+                  distance: 250,
+                  duration: 2,
+                  opacity: 0,
+                  size: 0,
+                },
+                grab: {
+                  distance: 400,
+                },
+                repulse: {
+                  distance: 400,
+                },
               },
-              random: true,
-              speed: 1,
-              spin: {},
             },
-            number: {
-              density: {
-                enable: true,
+            particles: {
+              color: {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                value: useColorModeValue("#D6BCFA", "#ffffff"),
               },
-              value: 160,
-            },
-            opacity: {
-              random: {
-                enable: true,
+              links: {
+                color: {
+                  value: "#ffffff",
+                },
+                distance: 150,
+                opacity: 0.4,
               },
-              value: {
-                min: 0,
-                max: 1,
-              },
-              animation: {
+              move: {
+                attract: {
+                  rotate: {
+                    x: 600,
+                    y: 600,
+                  },
+                },
                 enable: true,
+                path: {},
+                outModes: {
+                  bottom: "out",
+                  left: "out",
+                  right: "out",
+                  top: "out",
+                },
+                random: true,
                 speed: 1,
-                minimumValue: 0,
+                spin: {},
+              },
+              number: {
+                density: {
+                  enable: true,
+                },
+                value: 160,
+              },
+              opacity: {
+                random: {
+                  enable: true,
+                },
+                value: {
+                  min: 0,
+                  max: 1,
+                },
+                animation: {
+                  enable: true,
+                  speed: 1,
+                  minimumValue: 0,
+                },
+              },
+              size: {
+                random: {
+                  enable: true,
+                },
+                value: {
+                  min: 1,
+                  max: 3,
+                },
+                animation: {
+                  speed: 4,
+                  minimumValue: 0.3,
+                },
               },
             },
-            size: {
-              random: {
-                enable: true,
-              },
-              value: {
-                min: 1,
-                max: 3,
-              },
-              animation: {
-                speed: 4,
-                minimumValue: 0.3,
-              },
-            },
-          },
-        }}
-      />
-      )
+          }}
+        />
+      )}
       <Section>
         <Box my={12} align="center">
           <p>
             <Badge colorScheme={useColorModeValue("purple", "red")} mr={2}>
-              Nyt tester hej
+              Nyt
             </Badge>
             Ny hjemmeside er oppe og køre! Tag et kig 🥳
           </p>
