@@ -15,13 +15,6 @@ import {
   LinkOverlay,
   AspectRatio,
   Icon,
-  Popover,
-  PopoverBody,
-  PopoverHeader,
-  PopoverContent,
-  PopoverTrigger,
-  PopoverCloseButton,
-  PopoverArrow,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
@@ -45,7 +38,7 @@ const Page = () => {
         <Box my={12} align="center">
           <p>
             <Badge colorScheme={useColorModeValue("purple", "red")} mr={2}>
-              Nyt
+              Nyt test
             </Badge>
             Ny hjemmeside er oppe og køre! Tag et kig 🥳
           </p>
