@@ -1,0 +1,46 @@
+{
+    "gearData": [
+      {
+        "id": 1,
+        "title": "24\" BenQ ZOWIE XL2411P",
+        "description": "En lækker skærm som kører med 240hz. God til gaming og programmering.",
+        "url": "https://www.proshop.dk/Skaerm/BenQ-24-Skaerm-Zowie-XL-Series-XL2411P-Graa-1-ms/2628256?utm_source=google&utm_medium=cpc&utm_campaign=searchengine&gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZPnKKBd38sYWDuFP_40WfQob9ndEeP_gUVBdwntkh2Fp95Dya6V_wBoCLRwQAvD_BwE",
+        "image": "images/benq.webp"
+      },
+      {
+        "id": 2,
+        "title": "24\" AOC 24G2U",
+        "description": "Bruges som anden skærm. Den har gode farver, så den er oplagt til at tjekke hjemmesider og farvekoder på.",
+        "url": "https://www.komplett.dk/product/1138823/gaming/spiludstyr/gamingskaerme/aoc-24-gamingskaerm-24g2u?channable=0095b76964003131333838323364&gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZPmk9HLWesx5k1EGn8b9LsVF1WVpwJVMhL0lGW9Y29VtHB500x8biBoCoaYQAvD_BwE&gclsrc=aw.ds",
+        "image": "images/aoc.png"
+      },
+      {
+        "id": 3,
+        "title": "NZXT Case - Byg selv PC",
+        "description": "Windows 10 Pro 64-bit | i7-9700K CPU @ 3.60GHz (8 CPUs) | 32 GB RAM | NVIDIA GeForce RTX 2070 8 GB",
+        "url": "https://nzxt.com/collection/h710",
+        "image": "images/nzxt.png"
+      },
+      {
+        "id": 4,
+        "title": "Steelseries Arctis 5",
+        "description": "Et rigtig godt headset med god lyd og æstetik. Perfekt til musik, gaming og videolyd.",
+        "url": "https://steelseries.com/gaming-headsets/arctis-5",
+        "image": "images/steelseries-arctis-5.png"
+      },
+      {
+        "id": 5,
+        "title": "Varmilo Summit - Cherry MX Blue Keys",
+        "description": "Det bedste keyboard jeg har haft. Varmilo har mange fede keyboards med unikke designs.",
+        "url": "https://www.komplett.dk/product/1158186",
+        "image": "images/varmilo.png"
+      },
+      {
+        "id": 5,
+        "title": "Logitech G Pro",
+        "description": "Den bedste trådløse mus jeg har prøvet. Perfekt til gaming og så slipper man får en træls ledning der ser grim ud.",
+        "url": "https://www.logitechg.com/da-dk/products/gaming-mice/pro-wireless-mouse.html",
+        "image": "images/logitechgpro.png"
+      }
+    ]
+  }

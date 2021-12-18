@@ -32,95 +32,100 @@ import libraries from "../data/datalibraries.json";
 const Page = () => {
   return (
     <Container maxW="container.md">
-      <Box my={12} align="center">
-        <p>
-          <Badge colorScheme={useColorModeValue("purple", "red")} mr={2}>
-            Nyt
-          </Badge>
-          Ny hjemmeside er oppe og køre! Tag et kig 🥳
-        </p>
-      </Box>
+      <Section>
+        <Box my={12} align="center">
+          <p>
+            <Badge colorScheme={useColorModeValue("purple", "red")} mr={2}>
+              Nyt
+            </Badge>
+            Ny hjemmeside er oppe og køre! Tag et kig 🥳
+          </p>
+        </Box>
 
-      <Box mt={12} display={{ md: "flex" }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Simon L. Lange
-          </Heading>
-          <p>Web-entusiast ( Designer / Udvikler ) </p>
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 10, md: 0 }}
-          ml={{ md: 6 }}
-          align="center"
-        >
-          <Image
-            borderColor={useColorModeValue("whiteAlpha.900", "whiteAlpha.800")}
-            borderWidth={4}
-            borderStyle="solid"
-            maxWidth="150px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/avatar.jpg"
-            alt="Simon"
-          />
-        </Box>
-      </Box>
-      <Box mt={12} display="flex">
-        <Box mr={6}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/simon-larsen-lange-ab5867213/"
+        <Box mt={12} display={{ md: "flex" }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Simon L. Lange
+            </Heading>
+            <p>Web-entusiast ( Designer / Udvikler ) </p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 10, md: 0 }}
+            ml={{ md: 6 }}
+            align="center"
           >
-            <Button
-              color="white"
-              bg="#0077b5"
-              _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
-            >
-              LinkedIn
-              <Icon pl={2} fontSize="3xl" as={AiOutlineLinkedin} />
-            </Button>
-          </a>
+            <Image
+              borderColor={useColorModeValue(
+                "whiteAlpha.900",
+                "whiteAlpha.800"
+              )}
+              borderWidth={4}
+              borderStyle="solid"
+              maxWidth="150px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/avatar.jpg"
+              alt="Simon"
+            />
+          </Box>
         </Box>
-        <Box mr={6}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.instagram.com/simonllange"
-          >
-            <Button
-              color="white"
-              bg="#8a3ab9"
-              _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
+        <Box mt={12} display="flex">
+          <Box mr={6}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/simon-larsen-lange-ab5867213/"
             >
-              Instagram
-              <Icon pl={2} fontSize="3xl" as={AiOutlineInstagram} />
-            </Button>
-          </a>
-        </Box>
-        <Box>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/simonllange"
-          >
-            <Button
-              color={useColorModeValue("whiteAlpha.900", "black")}
-              bg={useColorModeValue("black", "whiteAlpha.900")}
-              _hover={{
-                backgroundColor: "#3d3d3d",
-                transition: "0.4s",
-                color: "white",
-              }}
+              <Button
+                color="white"
+                bg="#0077b5"
+                _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
+              >
+                LinkedIn
+                <Icon pl={2} fontSize="3xl" as={AiOutlineLinkedin} />
+              </Button>
+            </a>
+          </Box>
+          <Box mr={6}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/simonllange"
             >
-              GitHub
-              <Icon pl={2} fontSize="3xl" as={AiOutlineGithub} />
-            </Button>
-          </a>
+              <Button
+                color="white"
+                bg="#8a3ab9"
+                _hover={{ backgroundColor: "#3d3d3d", transition: "0.4s" }}
+              >
+                Instagram
+                <Icon pl={2} fontSize="3xl" as={AiOutlineInstagram} />
+              </Button>
+            </a>
+          </Box>
+          <Box>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/simonllange"
+            >
+              <Button
+                color={useColorModeValue("whiteAlpha.900", "black")}
+                bg={useColorModeValue("black", "whiteAlpha.900")}
+                _hover={{
+                  backgroundColor: "#3d3d3d",
+                  transition: "0.4s",
+                  color: "white",
+                }}
+              >
+                GitHub
+                <Icon pl={2} fontSize="3xl" as={AiOutlineGithub} />
+              </Button>
+            </a>
+          </Box>
         </Box>
-      </Box>
-      <Divider my={12} borderColor="black.900" />
+        <Divider my={12} borderColor="black.900" />
+      </Section>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Om mig
@@ -163,6 +168,8 @@ const Page = () => {
           </Link>
         </Box>
       </Section>
+      <Box id="toolsPage" />
+      <Box mt={24} />
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Mine redskaber
@@ -185,7 +192,7 @@ const Page = () => {
         {programs &&
           programs.programs.map(({ title, image, description, url }) => (
             <>
-              <LinkBox role="group" as="article">
+              <LinkBox role="group" as="article" my={10}>
                 <Stack
                   direction={{ base: "column", md: "row" }}
                   p={3}
@@ -232,7 +239,7 @@ const Page = () => {
         {tools &&
           tools.tools.map(({ title, image, description, url }) => (
             <>
-              <LinkBox role="group" as="article">
+              <LinkBox role="group" as="article" my={10}>
                 <Stack
                   direction={{ base: "column", md: "row" }}
                   p={3}
@@ -279,7 +286,7 @@ const Page = () => {
         {libraries &&
           libraries.libraries.map(({ title, image, description, url }) => (
             <>
-              <LinkBox role="group" as="article">
+              <LinkBox role="group" as="article" my={10}>
                 <Stack
                   direction={{ base: "column", md: "row" }}
                   p={3}

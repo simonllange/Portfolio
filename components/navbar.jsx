@@ -16,22 +16,27 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import NightModeToggle from "./nightmode";
+import { IoLogoGithub } from "react-icons/io";
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, children, _target, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("black.900", "whiteAlpha.900");
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? "grayColor" : undefined}
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        bg={active ? [useColorModeValue("grayColor", "red.200")] : undefined}
         color={active ? "whiteAlpha.900" : inactiveColor}
         borderRadius={5}
         _hover={{
           backgroundColor: useColorModeValue("#d6bcfa", "red.200"),
           transition: "0.2s",
           textDecoration: "underline",
+          color: "white",
         }}
+        _target={_target}
+        {...props}
       >
         {children}
       </Link>
@@ -79,6 +84,21 @@ const Navbar = (props) => {
           <LinkItem href="/gear" path={path}>
             Gear
           </LinkItem>
+          <LinkItem href="/#toolsPage" path={path}>
+            Redskaber
+          </LinkItem>
+          <LinkItem
+            _target="_blank"
+            href="https://github.com/simonllange/Portfolio"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <NightModeToggle />
@@ -97,10 +117,16 @@ const Navbar = (props) => {
                 <NextLink href="/portfolio" passHref>
                   <MenuItem as={Link}>Portfolio</MenuItem>
                 </NextLink>
-                <NextLink href="/blog" passHref>
-                  <MenuItem as={Link}>Blog</MenuItem>
+                <NextLink href="/gear" passHref>
+                  <MenuItem as={Link}>Gear</MenuItem>
                 </NextLink>
-                <NextLink href="https://www.simonllange.com" passHref>
+                <NextLink href="/#toolsPage" passHref>
+                  <MenuItem as={Link}>Redskaber</MenuItem>
+                </NextLink>
+                <NextLink
+                  href="https://github.com/simonllange/Portfolio"
+                  passHref
+                >
                   <MenuItem as={Link}>Source</MenuItem>
                 </NextLink>
               </MenuList>

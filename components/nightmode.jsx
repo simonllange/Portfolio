@@ -7,9 +7,9 @@ const NightModeToggle = () => {
   return (
     <IconButton
       aria-label="Toggle Nightmode"
-      colorScheme={useColorModeValue("purple", "orange")}
       icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
       onClick={toggleColorMode}
+      bg="none"
     />
   );
 };
