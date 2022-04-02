@@ -35,6 +35,21 @@
       "description": "Next.js er for mig, en bedre udgave af React. Next.js har mange indbygget værktøjer, som almindelig React ikke tilbyder.",
       "url": "https://nextjs.org/",
       "image": "images/nextjs.png"
+    },
+    {
+      "id": 7,
+      "title": "NuxtJS",
+      "description": "Et Vue framework, som gøre Vue meget mere intuitivt og bruge, og som har Vuex integreret.",
+      "url": "https://nuxtjs.org/",
+      "image": "images/nuxt.png"
+    },
+    {
+      "id": 8,
+      "title": "Vue",
+      "description": "Et JavaScript framework, som er virkelig alsidig, performant og forholdsvis meget nem at gå til!",
+      "url": "https://vuejs.org/",
+      "image": "images/vue.png"
     }
+
   ]
 }

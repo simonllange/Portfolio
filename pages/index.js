@@ -160,14 +160,13 @@ const Page = () => {
             tænke på nye idéer, og at kunne manifestere idéerne med min kode.
             Når jeg ikke koder og designer, så elsker jeg at spille computer, se
             film, lave mad og øve mig i at tegne/lave skitser. På nuværende
-            tidspunkt er jeg ledig, så hvis du har lyst til at tage en snak,
-            skal du være velkommen til at kontakte mig på{" "}
-            <a href="mailto:simonllange@gmail.com">
+            tidspunkt er jeg ansat som front-end udvikler hos{" "}
+            <a href="https://www.mindthemedia.com">
               <Box
                 display="inline-block"
                 color={useColorModeValue("purple.400", "red.200")}
               >
-                simonllange@gmail.com
+                Mindthemedia ApS
               </Box>
             </a>
           </Paragraph>
