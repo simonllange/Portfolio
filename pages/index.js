@@ -161,7 +161,7 @@ const Page = () => {
             Når jeg ikke koder og designer, så elsker jeg at spille computer, se
             film, lave mad og øve mig i at tegne/lave skitser. På nuværende
             tidspunkt er jeg ansat som front-end udvikler hos{" "}
-            <a title="Bellcom" href="https://bellcom.dk" target="_blank">
+            <a title="Bellcom" href="https://bellcom.dk">
               <Box
                 display="inline-block"
                 color={useColorModeValue("purple.400", "red.200")}
